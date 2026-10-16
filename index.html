@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneZone | Mobile Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <span class="logo-icon">▱</span>
+            <span>PhoneZone<small>Better Phones, Better Life</small></span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Phones</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-btn" onclick="showCart()">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="eyebrow">LATEST & GREATEST</p>
+                <h1>Smartphones for a <span>Better Tomorrow.</span></h1>
+                <p>
+                    Discover the latest mobile phones from top brands
+                    with amazing prices and quality.
+                </p>
+                <a href="#products" class="button">Shop Now →</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=85"
+                alt="Modern smartphone"
+            >
+        </section>
+
+        <section class="benefits" id="about">
+            <div>🚚 <strong>Free Shipping</strong><small>On eligible orders</small></div>
+            <div>🛡️ <strong>Original Products</strong><small>Shop with confidence</small></div>
+            <div>🎧 <strong>Customer Support</strong><small>We are here to help</small></div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
+                    <h2>Featured Phones</h2>
+                </div>
+
+                <div class="filters">
+                    <input
+                        type="search"
+                        id="search"
+                        placeholder="Search phone..."
+                    >
+
+                    <select id="brand-filter">
+                        <option value="All">All Brands</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Oppo">Oppo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid"></div>
+        </section>
+
+        <section class="offer">
+            <div>
+                <p class="eyebrow">SPECIAL OFFER</p>
+                <h2>Find Your Next Phone.</h2>
+                <p>Explore our collection of smartphones.</p>
+                <a href="#products" class="button light-button">Explore Now →</a>
+            </div>
+            <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80"
+                alt="Phone special offer"
+            >
+        </section>
+
+        <section class="reviews">
+            <h2>What Our Customers Say</h2>
+            <div class="review-grid">
+                <article>
+                    <h3>Ayesha Khan ★★★★★</h3>
+                    <p>Beautiful phone and a great shopping experience!</p>
+                </article>
+                <article>
+                    <h3>Ali Raza ★★★★★</h3>
+                    <p>The website is simple and easy to use.</p>
+                </article>
+                <article>
+                    <h3>Sara Malik ★★★★★</h3>
+                    <p>Great collection and an attractive design.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <a href="#home" class="logo">
+            <span class="logo-icon">▱</span>
+            <span>PhoneZone<small>Better Phones, Better Life</small></span>
+        </a>
+        <p>Discover your next favourite smartphone.</p>
+        <p>Contact: support@phonezone.example</p>
+        <p>© 2026 PhoneZone. Student project.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+</body>
+</html>
+
